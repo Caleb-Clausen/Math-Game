@@ -1,0 +1,54 @@
+﻿@page
+@model RazorPagesMathGame.Pages.StudentPortalModel
+@{
+    ViewData["Title"] = "Student Portal";
+   
+        @functions{
+            public object Message { get; set; }
+            public void OnGet()
+            {
+                Message = "Get used";
+            }
+            public void OnPost()
+            {
+                Message = "Post used";
+            }
+        
+    }
+}
+
+
+
+<div class="text-center">
+    <h1 class="display-4">Math Game</h1>
+    <h2>@DateTime.Now</h2>
+    
+
+</div>
+
+
+
+<body>
+
+    <div class="container">
+        <div class="blog-post">
+            <h3>@Message</h3>
+            <form method="post"><button class="btn btn-default">Click to post</button></form>
+            <p><a href="C:\Users\srini\OneDrive\Documents\MSSA\My projects\RazorPagesUI\RazorPagesMathGame\RazorPagesMathGame\Pages\Addition.cshtml" class="btn btn-default"><img src="~/images/plus-24844_1280.png" height="450" alt="Addition Image" /></a></p>
+
+            <button><img src="~/images/plus-24844_1280.png" height="450" alt="Addition Image" /></button>
+            <button><img src="~/images/minus-2419254_1920.png" height="450" alt="Subtraction Image" /></button>
+            <button><img src="~/images/x-24850_1280.png" height="450" alt="Multiplication Image" /></button>
+            <button><img src="~/images/divide-40654_1280.png" height="450" alt="Division Image" /></button>
+        </div>
+
+
+
+
+    </div>
+
+
+
+</body>
+
+

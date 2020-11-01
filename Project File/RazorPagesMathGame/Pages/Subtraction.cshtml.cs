@@ -7,9 +7,13 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace MathGame.Pages
 {
-    public class AdditionModel : PageModel
+    public class SubtractionModel : PageModel
     {
-
+        public string MyProperty2 { get; set; } = "hello";
+        public void Displaymessage()
+        {
+           // WriteOnlyStream("hello and welcome!");
+        }
         public void OnGet()
         {
         }

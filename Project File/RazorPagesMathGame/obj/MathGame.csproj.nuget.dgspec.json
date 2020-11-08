@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Cloudsan\\Desktop\\GitHubProjects\\Math Game v1\\Project File\\RazorPagesMathGame\\MathGame.csproj": {}
+    "C:\\Users\\Cloudsan\\Desktop\\GitHubProjects\\ProjecFilesTeam\\Project File\\RazorPagesMathGame\\MathGame.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Cloudsan\\Desktop\\GitHubProjects\\Math Game v1\\Project File\\RazorPagesMathGame\\MathGame.csproj": {
+    "C:\\Users\\Cloudsan\\Desktop\\GitHubProjects\\ProjecFilesTeam\\Project File\\RazorPagesMathGame\\MathGame.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Cloudsan\\Desktop\\GitHubProjects\\Math Game v1\\Project File\\RazorPagesMathGame\\MathGame.csproj",
+        "projectUniqueName": "C:\\Users\\Cloudsan\\Desktop\\GitHubProjects\\ProjecFilesTeam\\Project File\\RazorPagesMathGame\\MathGame.csproj",
         "projectName": "MathGame",
-        "projectPath": "C:\\Users\\Cloudsan\\Desktop\\GitHubProjects\\Math Game v1\\Project File\\RazorPagesMathGame\\MathGame.csproj",
+        "projectPath": "C:\\Users\\Cloudsan\\Desktop\\GitHubProjects\\ProjecFilesTeam\\Project File\\RazorPagesMathGame\\MathGame.csproj",
         "packagesPath": "C:\\Users\\Cloudsan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Cloudsan\\Desktop\\GitHubProjects\\Math Game v1\\Project File\\RazorPagesMathGame\\obj\\",
+        "outputPath": "C:\\Users\\Cloudsan\\Desktop\\GitHubProjects\\ProjecFilesTeam\\Project File\\RazorPagesMathGame\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Cloudsan\\AppData\\Roaming\\NuGet\\NuGet.Config",

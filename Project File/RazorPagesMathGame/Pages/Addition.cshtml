@@ -1,4 +1,22 @@
 ﻿@page
 @model MathGame.Pages.AdditionModel
 @{
+
+    ViewData["Title"] = "Addition";
 }
+@Model.firstNumber = AdditionMod.genorator.Next(1, 21);
+@Model.secondNumber = AdditionMod.genorator.Next(1, 21);
+@Model.cool = "cool test"
+
+
+<div class="text-center">
+    <h1 class="display-4">Wellcome @Model.FirstName</h1>
+    <p> Now we are getting somewhere</p>
+</div>
+
+<form method="post">
+    <h3>@Model.firstNumber + @Model.secondNumber</h3>
+    <input type="text" asp-for="AdditionMod.Answer" placeholder="Answer" />
+    <button type="submit">Submit</button>
+
+</form>

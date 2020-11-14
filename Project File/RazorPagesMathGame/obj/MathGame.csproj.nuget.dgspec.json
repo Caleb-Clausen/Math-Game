@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\srini\\OneDrive\\Documents\\MSSA\\My projects\\RazorPagesUI\\RazorPagesMathGame\\RazorPagesMathGame\\MathGame.csproj": {}
+    "C:\\Users\\srini\\OneDrive\\Documents\\MSSA\\My projects\\RazorPagesUI\\RazorPagesMathGame\\Math-Game\\New Repo\\Project File\\RazorPagesMathGame\\MathGame.csproj": {}
   },
   "projects": {
-    "C:\\Users\\srini\\OneDrive\\Documents\\MSSA\\My projects\\RazorPagesUI\\RazorPagesMathGame\\RazorPagesMathGame\\MathGame.csproj": {
+    "C:\\Users\\srini\\OneDrive\\Documents\\MSSA\\My projects\\RazorPagesUI\\RazorPagesMathGame\\Math-Game\\New Repo\\Project File\\RazorPagesMathGame\\MathGame.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\srini\\OneDrive\\Documents\\MSSA\\My projects\\RazorPagesUI\\RazorPagesMathGame\\RazorPagesMathGame\\MathGame.csproj",
+        "projectUniqueName": "C:\\Users\\srini\\OneDrive\\Documents\\MSSA\\My projects\\RazorPagesUI\\RazorPagesMathGame\\Math-Game\\New Repo\\Project File\\RazorPagesMathGame\\MathGame.csproj",
         "projectName": "MathGame",
-        "projectPath": "C:\\Users\\srini\\OneDrive\\Documents\\MSSA\\My projects\\RazorPagesUI\\RazorPagesMathGame\\RazorPagesMathGame\\MathGame.csproj",
+        "projectPath": "C:\\Users\\srini\\OneDrive\\Documents\\MSSA\\My projects\\RazorPagesUI\\RazorPagesMathGame\\Math-Game\\New Repo\\Project File\\RazorPagesMathGame\\MathGame.csproj",
         "packagesPath": "C:\\Users\\srini\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\srini\\OneDrive\\Documents\\MSSA\\My projects\\RazorPagesUI\\RazorPagesMathGame\\RazorPagesMathGame\\obj\\",
+        "outputPath": "C:\\Users\\srini\\OneDrive\\Documents\\MSSA\\My projects\\RazorPagesUI\\RazorPagesMathGame\\Math-Game\\New Repo\\Project File\\RazorPagesMathGame\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\srini\\AppData\\Roaming\\NuGet\\NuGet.Config",

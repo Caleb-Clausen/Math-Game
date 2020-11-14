@@ -1,0 +1,80 @@
+﻿@page
+@model MathGame.Pages.SubtractionModel
+@{
+    @Model.MyProperty2
+}
+<head>
+    <meta charset="UTF-8">
+    <title>rand100.html</title>
+    <style type="text/css">
+        fieldset {
+            width: 600px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        label {
+            float: left;
+            width: 250px;
+            text-align: right;
+            margin-right: 1em;
+            clear: left;
+        }
+
+        span {
+            float: left;
+        }
+        input {
+            float: right;
+            width: 250px;
+            text-align: right;
+            margin-right: 1em;
+            clear: left;
+        }
+        button {
+            display: block;
+            clear: both;
+            margin: auto;
+        }
+    </style>
+    <script type="text/javascript">
+        function subtract() {
+            //create variables for form elements
+            var dNum1 = document.getElementById("dNumx");
+            var dNum2 = document.getElementById("dNumy");
+            var result = document.getElementById("resultz");
+            //get random number
+            var rand1 = Math.random();
+            //multiply by 100
+            var a = rand1 * 100;
+            var dNum1 = Math.floor(a);
+            var rand2 = Math.random();
+            var b = rand2 * 100;
+            //multiply by 100
+            var dNum2 = Math.floor(b);
+            dNumx.innerHTML = dNum1;
+            dNumy.innerHTML = dNum2;
+            //get the ceiling
+            var result = (dNum1 - dNum2);
+            resultz.innerHTML = result;
+        } // end roll
+    </script>
+</head>
+<body>
+    <h1>Substract Number 1 from Number 2</h1>
+    <form>
+        <fieldset>
+            <label>Number 1</label>
+            <span id="dNumx">0</span>
+            <label>Number 2</label>
+            <span id="dNumy">0</span>
+            <input type="text" name="result" id="result" />
+            <label>result</label>
+            <span id="resultz">0</span>
+            <button type="button"
+                    onclick="subtract()">
+                Subtract
+            </button>
+        </fieldset>
+    </form>
+</body>

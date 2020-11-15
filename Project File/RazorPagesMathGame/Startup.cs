@@ -32,6 +32,7 @@ namespace RazorPagesMathGame
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                app.UseAuthentication();
             }
             else
             {

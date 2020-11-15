@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\Cloudsan\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\Cloudsan\\.nuget\\packages"
+      "C:\\Users\\srini\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\srini\\.nuget\\packages"
     ]
   }
 }

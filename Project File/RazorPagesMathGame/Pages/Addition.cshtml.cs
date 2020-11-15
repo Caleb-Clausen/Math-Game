@@ -17,8 +17,8 @@ namespace MathGame.Pages
         public int secondNumber { get; set; }
 
 
-        [BindProperty]
-        public Additioninfo AdditionMod { get; set; }
+       
+        public Additioninfo AdditionMod = new Additioninfo();
       // [BindProperty]
         public string  cool { get; set; }
 
@@ -26,10 +26,12 @@ namespace MathGame.Pages
         public string FirstName { get; set; }
 
         public void OnGet()
-        {     
-            if(string.IsNullOrWhiteSpace(FirstName) == true)
+        {
+            firstNumber = AdditionMod.genorator.Next(1, 21);
+            secondNumber = AdditionMod.genorator.Next(1, 21);
+            if (string.IsNullOrWhiteSpace(FirstName) == true)
             {
-                FirstName = "User";
+                FirstName = AdditionMod.Answer;
             }
             
             
@@ -37,14 +39,15 @@ namespace MathGame.Pages
 
         public IActionResult OnPost()
         {
-
-            if(ModelState.IsValid == false)
+            firstNumber = AdditionMod.genorator.Next(1, 21);
+            secondNumber = AdditionMod.genorator.Next(1, 21);
+            if (ModelState.IsValid == false)
             {
                 return Page();
 
             }
 
-            return RedirectToPage("./Pages/Addition");
+            return Page();
 
         }
     }

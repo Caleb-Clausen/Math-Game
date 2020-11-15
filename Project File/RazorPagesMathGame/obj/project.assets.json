@@ -8810,19 +8810,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\srini\\.nuget\\packages\\": {}
+    "C:\\Users\\Cloudsan\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\srini\\OneDrive\\Documents\\MSSA\\My projects\\RazorPagesUI\\RazorPagesMathGame\\Math-Game\\Project File\\RazorPagesMathGame\\MathGame.csproj",
+      "projectUniqueName": "C:\\Users\\Cloudsan\\Source\\Repos\\Math-Game\\Project File\\RazorPagesMathGame\\MathGame.csproj",
       "projectName": "MathGame",
-      "projectPath": "C:\\Users\\srini\\OneDrive\\Documents\\MSSA\\My projects\\RazorPagesUI\\RazorPagesMathGame\\Math-Game\\Project File\\RazorPagesMathGame\\MathGame.csproj",
-      "packagesPath": "C:\\Users\\srini\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\srini\\OneDrive\\Documents\\MSSA\\My projects\\RazorPagesUI\\RazorPagesMathGame\\Math-Game\\Project File\\RazorPagesMathGame\\obj\\",
+      "projectPath": "C:\\Users\\Cloudsan\\Source\\Repos\\Math-Game\\Project File\\RazorPagesMathGame\\MathGame.csproj",
+      "packagesPath": "C:\\Users\\Cloudsan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Cloudsan\\Source\\Repos\\Math-Game\\Project File\\RazorPagesMathGame\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\srini\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Cloudsan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

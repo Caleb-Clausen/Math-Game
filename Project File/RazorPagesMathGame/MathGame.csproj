@@ -5,10 +5,24 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\lib\phaser-3.24.1\.github\CODE_OF_CONDUCT.md" />
+    <None Include="wwwroot\lib\phaser-3.24.1\.github\CONTRIBUTING.md" />
+    <None Include="wwwroot\lib\phaser-3.24.1\.github\FUNDING.yml" />
+    <None Include="wwwroot\lib\phaser-3.24.1\.github\ISSUE_TEMPLATE\bug_report.md" />
+    <None Include="wwwroot\lib\phaser-3.24.1\.github\ISSUE_TEMPLATE\feature_request.md" />
+    <None Include="wwwroot\lib\phaser-3.24.1\.github\no-response.yml" />
+    <None Include="wwwroot\lib\phaser-3.24.1\.github\PULL_REQUEST_TEMPLATE.md" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.9" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.9" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.9" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.TypeScript.MSBuild" Version="4.1.2">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>

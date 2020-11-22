@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Z24tvek8pxMnV1rJ2m/AAB1TSwCs5no178dgKm9XzAHC7TlJRBaal6B3/h3ZV1NOnAvdyDa8GQ27pVHxYg+BSQ==",
+  "dgSpecHash": "19gGuvaHyjZIgMs4hLU1ie51+bzXNErBkJpxMwCtXI86pAeOj+rbtwPvgETrq/o/P/9GmqESj4gpDljxBf6FOA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Cloudsan\\Source\\Repos\\Math-Game\\Project File\\RazorPagesMathGame\\MathGame.csproj",
   "expectedPackageFiles": [
@@ -52,6 +52,7 @@
     "C:\\Users\\Cloudsan\\.nuget\\packages\\microsoft.identitymodel.tokens\\5.5.0\\microsoft.identitymodel.tokens.5.5.0.nupkg.sha512",
     "C:\\Users\\Cloudsan\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.2\\microsoft.netcore.platforms.2.1.2.nupkg.sha512",
     "C:\\Users\\Cloudsan\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\Cloudsan\\.nuget\\packages\\microsoft.typescript.msbuild\\4.1.2\\microsoft.typescript.msbuild.4.1.2.nupkg.sha512",
     "C:\\Users\\Cloudsan\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration\\3.1.4\\microsoft.visualstudio.web.codegeneration.3.1.4.nupkg.sha512",
     "C:\\Users\\Cloudsan\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.contracts\\3.1.4\\microsoft.visualstudio.web.codegeneration.contracts.3.1.4.nupkg.sha512",
     "C:\\Users\\Cloudsan\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.core\\3.1.4\\microsoft.visualstudio.web.codegeneration.core.3.1.4.nupkg.sha512",

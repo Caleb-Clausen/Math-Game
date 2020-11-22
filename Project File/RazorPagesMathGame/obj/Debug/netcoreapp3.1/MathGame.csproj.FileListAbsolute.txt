@@ -469,9 +469,6 @@ C:\Users\Cloudsan\Source\Repos\Math-Game\Project File\RazorPagesMathGame\bin\Deb
 C:\Users\Cloudsan\Source\Repos\Math-Game\Project File\RazorPagesMathGame\obj\Debug\netcoreapp3.1\MathGame.csprojAssemblyReference.cache
 C:\Users\Cloudsan\Source\Repos\Math-Game\Project File\RazorPagesMathGame\obj\Debug\netcoreapp3.1\MathGame.AssemblyInfoInputs.cache
 C:\Users\Cloudsan\Source\Repos\Math-Game\Project File\RazorPagesMathGame\obj\Debug\netcoreapp3.1\MathGame.AssemblyInfo.cs
-C:\Users\Cloudsan\Source\Repos\Math-Game\Project File\RazorPagesMathGame\obj\Debug\netcoreapp3.1\MathGame.csproj.CoreCompileInputs.cache
-C:\Users\Cloudsan\Source\Repos\Math-Game\Project File\RazorPagesMathGame\obj\Debug\netcoreapp3.1\MathGame.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Cloudsan\Source\Repos\Math-Game\Project File\RazorPagesMathGame\obj\Debug\netcoreapp3.1\MathGame.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Cloudsan\Source\Repos\Math-Game\Project File\RazorPagesMathGame\obj\Debug\netcoreapp3.1\MathGame.RazorAssemblyInfo.cache
 C:\Users\Cloudsan\Source\Repos\Math-Game\Project File\RazorPagesMathGame\obj\Debug\netcoreapp3.1\MathGame.RazorAssemblyInfo.cs
 C:\Users\Cloudsan\Source\Repos\Math-Game\Project File\RazorPagesMathGame\obj\Debug\netcoreapp3.1\MathGame.TagHelpers.input.cache
@@ -503,3 +500,6 @@ C:\Users\Cloudsan\Source\Repos\Math-Game\Project File\RazorPagesMathGame\obj\Deb
 C:\Users\Cloudsan\Source\Repos\Math-Game\Project File\RazorPagesMathGame\obj\Debug\netcoreapp3.1\MathGame.dll
 C:\Users\Cloudsan\Source\Repos\Math-Game\Project File\RazorPagesMathGame\obj\Debug\netcoreapp3.1\MathGame.pdb
 C:\Users\Cloudsan\Source\Repos\Math-Game\Project File\RazorPagesMathGame\obj\Debug\netcoreapp3.1\MathGame.genruntimeconfig.cache
+C:\Users\Cloudsan\Source\Repos\Math-Game\Project File\RazorPagesMathGame\obj\Debug\netcoreapp3.1\MathGame.csproj.CoreCompileInputs.cache
+C:\Users\Cloudsan\Source\Repos\Math-Game\Project File\RazorPagesMathGame\obj\Debug\netcoreapp3.1\MathGame.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Cloudsan\Source\Repos\Math-Game\Project File\RazorPagesMathGame\obj\Debug\netcoreapp3.1\MathGame.MvcApplicationPartsAssemblyInfo.cache

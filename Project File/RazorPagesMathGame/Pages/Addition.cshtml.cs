@@ -16,6 +16,8 @@ namespace MathGame.Pages
         [BindProperty]
         public int secondNumber { get; set; }
 
+        Console.WriteLine(      );
+
 
        
         public Additioninfo AdditionMod = new Additioninfo();

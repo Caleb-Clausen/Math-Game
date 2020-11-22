@@ -1,21 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Cloudsan\\Source\\Repos\\Math-Game\\Project File\\RazorPagesMathGame\\MathGame.csproj": {}
+    "C:\\Users\\evanc\\OneDrive\\Documents\\Github\\Math-Game\\Project File\\RazorPagesMathGame\\MathGame.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Cloudsan\\Source\\Repos\\Math-Game\\Project File\\RazorPagesMathGame\\MathGame.csproj": {
+    "C:\\Users\\evanc\\OneDrive\\Documents\\Github\\Math-Game\\Project File\\RazorPagesMathGame\\MathGame.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Cloudsan\\Source\\Repos\\Math-Game\\Project File\\RazorPagesMathGame\\MathGame.csproj",
+        "projectUniqueName": "C:\\Users\\evanc\\OneDrive\\Documents\\Github\\Math-Game\\Project File\\RazorPagesMathGame\\MathGame.csproj",
         "projectName": "MathGame",
-        "projectPath": "C:\\Users\\Cloudsan\\Source\\Repos\\Math-Game\\Project File\\RazorPagesMathGame\\MathGame.csproj",
-        "packagesPath": "C:\\Users\\Cloudsan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Cloudsan\\Source\\Repos\\Math-Game\\Project File\\RazorPagesMathGame\\obj\\",
+        "projectPath": "C:\\Users\\evanc\\OneDrive\\Documents\\Github\\Math-Game\\Project File\\RazorPagesMathGame\\MathGame.csproj",
+        "packagesPath": "C:\\Users\\evanc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\evanc\\OneDrive\\Documents\\Github\\Math-Game\\Project File\\RazorPagesMathGame\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Cloudsan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\evanc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -26,6 +30,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -37,6 +42,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
@@ -79,7 +85,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

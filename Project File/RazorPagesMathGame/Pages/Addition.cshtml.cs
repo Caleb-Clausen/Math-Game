@@ -7,34 +7,40 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using MathGame.Models;
 
+
 namespace MathGame.Pages
 {
+    
     public class AdditionModel : PageModel
     {
+
         [BindProperty]
         public int firstNumber { get; set; }
         [BindProperty]
         public int secondNumber { get; set; }
 
-        Console.WriteLine(      );
-
-
+        public string Yes = "Correct!";
+        public string No = "Try Again";
+        public string answerHolder;
        
         public Additioninfo AdditionMod = new Additioninfo();
+        
       // [BindProperty]
         public string  cool { get; set; }
 
         [BindProperty]
         public string FirstName { get; set; }
 
+
         public void OnGet()
         {
-            firstNumber = AdditionMod.genorator.Next(1, 21);
-            secondNumber = AdditionMod.genorator.Next(1, 21);
+
+            
             if (string.IsNullOrWhiteSpace(FirstName) == true)
             {
                 FirstName = AdditionMod.Answer;
             }
+
             
             
         }
@@ -43,11 +49,14 @@ namespace MathGame.Pages
         {
             firstNumber = AdditionMod.genorator.Next(1, 21);
             secondNumber = AdditionMod.genorator.Next(1, 21);
-            if (ModelState.IsValid == false)
+            if (Convert.ToInt32(AdditionMod.Answer) == (firstNumber+secondNumber))
             {
-                return Page();
+                answerHolder = Yes;
 
             }
+            else { answerHolder = No; }
+
+
 
             return Page();
 

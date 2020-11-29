@@ -674,3 +674,4 @@ C:\Users\evanc\OneDrive\Documents\Github\Math-Game\Project File\RazorPagesMathGa
 C:\Users\evanc\OneDrive\Documents\Github\Math-Game\Project File\RazorPagesMathGame\obj\Debug\netcoreapp3.1\MathGame.Views.pdb
 C:\Users\evanc\OneDrive\Documents\Github\Math-Game\Project File\RazorPagesMathGame\obj\Debug\netcoreapp3.1\MathGame.csproj.CopyComplete
 C:\Users\evanc\OneDrive\Documents\Github\Math-Game\Project File\RazorPagesMathGame\obj\Debug\netcoreapp3.1\MathGame.genruntimeconfig.cache
+C:\Users\evanc\OneDrive\Documents\Github\Math-Game\Project File\RazorPagesMathGame\obj\Debug\netcoreapp3.1\Razor\Pages\Division.cshtml.g.cs

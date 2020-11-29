@@ -1,14 +1,22 @@
 ﻿@page
-@model MathGame.Pages.AdditionModel
+@model MathGame.Pages.DivisionModel
 @{
 
-    ViewData["Title"] = "Addition";
+    ViewData["Title"] = "Division";
 
 }
 
 @Model.cool = "cool test"
-@Model.firstNumber = AdditionMod.genorator.Next(1, 21);
-@Model.secondNumber = AdditionMod.genorator.Next(1, 21);
+@Model.firstNumber = DivisionMod.genorator.Next(1, 21);
+@Model.MultiplesOfFirstNumber = ( ArrayList multiplesOfFirstNumber = new ArrayList();
+                for(int x = 2; x <= firstNumber; x++)
+                {
+                    if(firstNumber % x == 0)
+                    {
+                        multiplesOfFirstNumber.Add(x);
+                    }
+                })
+@Model.secondNumber = DivisionMod.genorator.Next(1, (multiplesOfFirstNumber[DivisionMod.genoator.Next(1,multiplesOfFirstNumber.Count-1]));
 
 <div class="text-center">
     <h1 class="display-4">Welcome @Model.FirstName</h1>
@@ -16,8 +24,8 @@
 </div>
 
 <form method="post">
-    <h3>@Model.firstNumber + @Model.secondNumber = @Model.answerHolder</h3>
-    <input type="text" asp-for="AdditionMod.Answer" placeholder="Answer" />
+    <h3>@Model.firstNumber / @Model.secondNumber = @Model.answerHolder</h3>
+    <input type="text" asp-for="DivisionMod.Answer" placeholder="Answer" />
     <button type="submit">Submit</button>
 </form>
 <html lang="en">

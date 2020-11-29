@@ -10,8 +10,8 @@
 @Model.firstNumber = AdditionMod.genorator.Next(1, 21);
 @Model.secondNumber = AdditionMod.genorator.Next(1, 21);
 
-<div class="text-center">
-    <h1 class="display-4">Welcome @Model.FirstName</h1>
+@*<div class="text-center">
+    <h1 class="display-4">Wellcome @Model.FirstName</h1>
     <p> Now we are getting somewhere</p>
 </div>
 
@@ -19,7 +19,7 @@
     <h3>@Model.firstNumber + @Model.secondNumber = @Model.answerHolder</h3>
     <input type="text" asp-for="AdditionMod.Answer" placeholder="Answer" />
     <button type="submit">Submit</button>
-</form>
+</form>*@
 <html lang="en">
 <body>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
@@ -27,19 +27,11 @@
     <script src="~/js/phaser.js" asp-append-version="true"></script>
 
     <script>
-
-
         var config = {
             type: Phaser.AUTO,
+            parent: 'phaser-example',
             width: 800,
             height: 600,
-            physics: {
-                default: 'arcade',
-                arcade: {
-                    gravity: { y: 300 },
-                    debug: false
-                }
-            },
             scene: {
                 preload: preload,
                 create: create,
@@ -47,84 +39,66 @@
             }
         };
 
+        var info;
+        var timer;
+        var alive = 0;
+
         var game = new Phaser.Game(config);
 
-
-
         function preload() {
-            this.load.image('plus', 'assets/plus.png');
-            this.load.image('sky', 'assets/sky.png');
-            this.load.image('ground', 'assets/platform.png');
-            this.load.image('star', 'assets/star.png');
-            this.load.image('bomb', 'assets/bomb.png');
-            this.load.spritesheet('dude',
-                'assets/dude.png',
-                { frameWidth: 32, frameHeight: 48 }
-            );
+            this.load.image('bg', 'assets/sky.png');
+            this.load.image('crate', 'assets/star.png');
         }
 
-        var platforms;
-
         function create() {
-            this.add.image(400, 300, 'sky');
-            this.add.image(400, 200, 'plus');
-            platforms = this.physics.add.staticGroup();
+            //  How many crates can you click on in 10 seconds?
+            this.add.image(400, 300, 'bg');
 
-            platforms.create(400, 568, 'ground').setScale(2).refreshBody();
+            //  Create a bunch of images
+            for (var i = 0; i < 64; i++) {
+                var x = Phaser.Math.Between(0, 800);
+                var y = Phaser.Math.Between(0, 600);
 
-            platforms.create(600, 400, 'ground');
-            platforms.create(50, 250, 'ground');
-            platforms.create(750, 220, 'ground');
+                var box = this.add.image(x, y, 'crate');
 
-            player = this.physics.add.sprite(100, 450, 'dude');
+                //  Make them all input enabled
+                box.setInteractive();
 
-            player.setBounce(0.2);
-            player.setCollideWorldBounds(true);
+                //  The images will dispatch a 'clicked' event when they are clicked on
+                box.on('clicked', clickHandler, this);
 
-            this.anims.create({
-                key: 'left',
-                frames: this.anims.generateFrameNumbers('dude', { start: 0, end: 3 }),
-                frameRate: 10,
-                repeat: -1
-            });
+                alive++;
+            }
 
-            this.anims.create({
-                key: 'turn',
-                frames: [{ key: 'dude', frame: 4 }],
-                frameRate: 20
-            });
+            //  If a Game Object is clicked on, this event is fired.
+            //  We can use it to emit the 'clicked' event on the game object itself.
+            this.input.on('gameobjectup', function (pointer, gameObject) {
+                gameObject.emit('clicked', gameObject);
+            }, this);
 
-            this.anims.create({
-                key: 'right',
-                frames: this.anims.generateFrameNumbers('dude', { start: 5, end: 8 }),
-                frameRate: 10,
-                repeat: -1
-            });
-            cursors = this.input.keyboard.createCursorKeys();
+            //  Display the game stats
+            info = this.add.text(@Model.firstNumber, @Model.firstNumber, '', { font: '48px Arial', fill: '#000000' });
 
+            timer = this.time.addEvent({ delay: 10000, callback: gameOver, callbackScope: this });
         }
 
         function update() {
-            if (cursors.left.isDown) {
-                player.setVelocityX(-160);
-
-                player.anims.play('left', true);
-            }
-            else if (cursors.right.isDown) {
-                player.setVelocityX(160);
-
-                player.anims.play('right', true);
-            }
-            else {
-                player.setVelocityX(0);
-
-                player.anims.play('turn');
-            }
-
-            if (cursors.up.isDown && player.body.touching.down) {
-                player.setVelocityY(-330);
-            }
+            info.setText('Alive: ' + alive + '\nTime: ' + Math.floor(10000 - timer.getElapsed()));
         }
+
+        function clickHandler(box) {
+            alive--;
+
+            box.off('clicked', clickHandler);
+            box.input.enabled = false;
+            box.setVisible(false);
+        }
+
+        function gameOver() {
+            this.input.off('gameobjectup');
+        }
+
+
 
 
     </script>

@@ -10,7 +10,7 @@
 @Model.firstNumber = AdditionMod.genorator.Next(1, 21);
 @Model.secondNumber = AdditionMod.genorator.Next(1, 21);
 
-@*<div class="text-center">
+<div class="text-center">
     <h1 class="display-4">Wellcome @Model.FirstName</h1>
     <p> Now we are getting somewhere</p>
 </div>
@@ -19,7 +19,9 @@
     <h3>@Model.firstNumber + @Model.secondNumber = @Model.answerHolder</h3>
     <input type="text" asp-for="AdditionMod.Answer" placeholder="Answer" />
     <button type="submit">Submit</button>
-</form>*@
+</form>
+
+
 <html lang="en">
 <body>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
@@ -48,18 +50,63 @@
         function preload() {
             this.load.image('bg', 'assets/sky.png');
             this.load.image('crate', 'assets/star.png');
+            this.load.image('plus', 'assets/plus.png');
+            this.load.image('equal', 'assets/equal.jpg');
         }
 
         function create() {
+
             //  How many crates can you click on in 10 seconds?
             this.add.image(400, 300, 'bg');
+            this.add.image(325, 250, 'plus');
 
+            var count = 100;
+
+
+            var stars = Phaser.Math.Between(1, 5);
             //  Create a bunch of images
-            for (var i = 0; i < 64; i++) {
-                var x = Phaser.Math.Between(0, 800);
-                var y = Phaser.Math.Between(0, 600);
+            var starstotal = stars;
+            for (var i = 0; i < stars; i++) {
+                @*var x = Phaser.Math.Between(0, 800);
+                var y = Phaser.Math.Between(0, 600);*@
 
-                var box = this.add.image(x, y, 'crate');
+                var box = this.add.image(count, 250, 'crate');
+                count = count + 40;
+
+                //  Make them all input enabled
+                box.setInteractive();
+
+                //  The images will dispatch a 'clicked' event when they are clicked on
+                box.on('clicked', clickHandler, this);
+
+                alive++;
+            }
+
+
+            //var box1 = this.add.image(700, 250, 'crate');
+
+            @*//  Make them all input enabled
+            box1.setInteractive();
+
+            //  The images will dispatch a 'clicked' event when they are clicked on
+            box1.on('clicked', clickHandler1, this);
+            //box1.setVisible(true);
+                *@
+            var stars = Phaser.Math.Between(1, 5);
+            starstotal = starstotal + stars;
+            count = 400;
+            var countx =  650;
+            var equal = this.add.image(650, 250, 'equal');
+            equal.setInteractive();
+            equal.on('clicked', clickHandler1, this)
+
+
+            for (var i = 0; i < stars; i++) {
+                @*var x = Phaser.Math.Between(0, 800);
+                var y = Phaser.Math.Between(0, 600);*@
+
+                var box = this.add.image(count, 250, 'crate');
+                count = count + 40;
 
                 //  Make them all input enabled
                 box.setInteractive();
@@ -77,22 +124,32 @@
             }, this);
 
             //  Display the game stats
-            info = this.add.text(@Model.firstNumber, @Model.firstNumber, '', { font: '48px Arial', fill: '#000000' });
+            //info = this.add.text(@Model.firstNumber, @Model.firstNumber, '', { font: '48px Arial', fill: '#000000' });
 
-            timer = this.time.addEvent({ delay: 10000, callback: gameOver, callbackScope: this });
+            //timer = this.time.addEvent({ delay: 10000, callback: gameOver, callbackScope: this });
         }
 
         function update() {
-            info.setText('Alive: ' + alive + '\nTime: ' + Math.floor(10000 - timer.getElapsed()));
+            //info.setText('Alive: ' + alive + '\nTime: ' + Math.floor(10000 - timer.getElapsed()));
         }
 
         function clickHandler(box) {
-            alive--;
+            //alive--;
 
             box.off('clicked', clickHandler);
             box.input.enabled = false;
             box.setVisible(false);
         }
+
+        function clickHandler1(equal) {
+            //alive--;
+            
+           // equal.off('clicked', clickHandler1);
+            
+                var box2 = this.add.image(Phaser.Math.Between(720, 750), 250, 'crate');
+            
+        }
+
 
         function gameOver() {
             this.input.off('gameobjectup');
